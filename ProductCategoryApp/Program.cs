@@ -11,6 +11,7 @@ await TestData.AddSampleDataAsync(connectionString);
 var productCategoryPairs = await ProductCategoryQuery.GetProductCategoryPairsAsync(connectionString);
 
 //Вывод результата
+Console.WriteLine(new string('-', 30));
 Console.WriteLine("ProductName - CategoryName");
 Console.WriteLine(new string('-', 30));
 foreach (var (productName, categoryName) in productCategoryPairs)
